@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* /////////////////////////////BACKGROUND IMAGE///////////////////////////////////// */
+
+.bg_image{
+    background-image:
+                     url("../images/bg_img.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header h1{
+  padding-top: 50px;
+   font-weight: bold;
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 5px;
+    color:#c3db09;
+}
+/* /////////////////////////////CENTER HEART RESULT IMAGE PART///////////////////////////////// */
+
+.result_img{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+.centered{
+   
+    color: #FFC300 ;
+    font-size: 50px !important;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* /////////////////////////////RIGHT SIDE TEXT BOXES AND BUTTONS///////////////////////////////////// */
+
+.right_side{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width:50%;
+  
+}
+.heartimg::before{
+    /* margin-left: 50px; */
+    content: "\f004";
+    font-family: "Font Awesome\ 5 Free"; font-weight: 900; 
+    display:inline-block;
+    /* padding: 3px; */
+    color: red;
+}
+ input[type=text]{
+    margin-left:50px; 
+}
+#btn_id{
+    margin-left:35%;
+}
+
+/* ///////////////////////////ANIMATION FOR HEART BETWEEN TEXT BOXES/////////////////////////////// */
+
+@keyframes heart{
+    from {font-size:20px;}
+    to {font-size:40px;}
+}
+.heartimg{
+    animation-name: heart;
+    animation-duration: 1s;
+    position: absolute;
+    top:-10px;
+    /* left:198px;  */
+    font-size:20px;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+} 
